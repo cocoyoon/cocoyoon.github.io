@@ -61,7 +61,7 @@ module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     output: 'export',
-    basePath: "/cocoyoon.github.io",
+    basePath: "/cocoyoon.github.io",  
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
